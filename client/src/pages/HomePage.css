@@ -1,0 +1,61 @@
+
+.homePage-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   padding: 20px; 
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.homePage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.homePage-content {
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.homePage-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.homePage-image {
+  display: none;
+}
+
+.homePage-image img {
+  width: 100%;
+  height: auto;
+  
+}
+
+@media (min-width: 768px) {
+  .homePage-container {
+    flex-direction: row;
+    
+  }
+
+  .homePage-content {
+    flex: 3;
+    padding: 40px;
+  }
+
+  .homePage-image {
+    display: block;
+    flex: 2;
+  }
+
+}

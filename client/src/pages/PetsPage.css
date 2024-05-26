@@ -1,0 +1,98 @@
+/* src/pages/PetsPage.css */
+
+.petsPage-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.petsPage-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.petsPage-header {
+  flex-shrink: 0; 
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.petsPage-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.petsPage-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.stats-item {
+  text-align: center;
+}
+
+.stats-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.stats-label {
+  font-size: 1rem;
+  color: #666;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #666;
+  padding: 20px;
+}
+
+.petsPage-list {
+  flex: 1;
+  overflow-y: auto; 
+}
+
+.petsPage-image {
+  display: none;
+}
+
+.petsPage-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .petsPage-container {
+    flex-direction: row;
+  }
+
+  .petsPage-content {
+    flex: 3; 
+    padding: 20px;
+  }
+
+  .petsPage-image {
+    display: block;
+    flex: 2; 
+  }
+}
+
+@media (max-width: 767px) {
+  .petsPage-content {
+    flex: 1;
+    overflow-y: auto; 
+  }
+}

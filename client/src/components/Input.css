@@ -1,0 +1,36 @@
+/* src/components/Input.css */
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.input-group input#color {
+  appearance: none;
+  padding: 0;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.input-group input#color::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.input-group input#color::-webkit-color-swatch {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

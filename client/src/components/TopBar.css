@@ -1,0 +1,74 @@
+.topBar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .topBar .logo {
+    font-size: 24px;
+    font-family: "Poetsen One", sans-serif;
+    color: white;
+    text-decoration: none;
+
+  }
+  
+  .topBar .menuToggle {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .topBar .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    
+
+  }
+  
+  .topBar  .navLinks.open {
+    display: flex;
+  }
+  
+  .topBar .navLinks a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .topBar  .navLinks a:last-child {
+    margin-bottom: 0;
+  }
+  
+  .topBar .navLinks a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (min-width: 600px) {
+    .topBar .navLinks {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      background-color: transparent;
+      padding: 0;
+      border-radius: 0;
+    }
+  
+    .topBar .navLinks a {
+      margin: 0 0 0 20px;
+      font-size: 18px;
+    }
+  
+    .topBar  .menuToggle {
+      display: none;
+    }
+  }
+  
